@@ -9,6 +9,10 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: sashi-app   # ← tells every step to run inside sashi-app
+
     steps:
       - uses: actions/checkout@v4
 
